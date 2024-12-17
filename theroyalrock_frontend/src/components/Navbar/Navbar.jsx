@@ -19,7 +19,7 @@ function Navbar() {
                 <li><a href="/">Home</a></li>
                 <li><a href="/about">About</a></li>
                 <li><a href="/services">What We Do</a></li>
-                <li><a href="/services">Gallary</a></li>
+                <li><a href="/services">Gallery</a></li>
                 <li>
                     <button className="btn">
                         <a href="/contact">Contact</a>

@@ -1,13 +1,13 @@
 import React from 'react'
-import './Gallary.css'
-import photo1 from "../../assets/images/gallary/photo1.jpg"
-import photo2 from "../../assets/images/gallary/photo2.jpg"
-import photo3 from "../../assets/images/gallary/photo3.jpg"
+import './Gallery.css'
+import photo1 from "../../assets/images/gallery/photo1.jpg"
+import photo2 from "../../assets/images/gallery/photo2.jpg"
+import photo3 from "../../assets/images/gallery/photo3.jpg"
 
-const Gallary = () => {
+const Gallery = () => {
     return (
-        <div className='gallary-photos'>
-            <div className='gallary-photo'>
+        <div className='gallery-photos'>
+            <div className='gallery-photo'>
                 <img src={photo1} alt='photo1' />
                 <div className='caption'>
                     <span class="material-symbols-outlined">
@@ -16,7 +16,7 @@ const Gallary = () => {
                     <p>View More</p>
                 </div>
             </div>
-            <div className='gallary-photo'>
+            <div className='gallery-photo'>
                 <img src={photo2} alt='photo2' />
                 <div className='caption'>
                     <span class="material-symbols-outlined">
@@ -25,7 +25,7 @@ const Gallary = () => {
                     <p>View More</p>
                 </div>
             </div>
-            <div className='gallary-photo'>
+            <div className='gallery-photo'>
                 <img src={photo3} alt='photo3' />
                 <div className='caption'>
                     <span class="material-symbols-outlined">
@@ -39,4 +39,4 @@ const Gallary = () => {
     )
 }
 
-export default Gallary
+export default Gallery
