@@ -9,9 +9,13 @@ function Navbar() {
             <img src={logo} alt="logo" />
             <ul >
                 <li><a href="/">Home</a></li>
-                <li><a href="/about">About Us </a></li>
+                <li><a href="/about">About</a></li>
                 <li><a href="/services">What We Do</a></li>
-                <li><a href="/contact">Contact Us</a></li>
+                <li>
+                    <button className="btn">
+                    <a href="/contact">Contact</a>
+                    </button>
+                </li>
 
             </ul>
         </nav>

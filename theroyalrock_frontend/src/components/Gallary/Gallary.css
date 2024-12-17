@@ -1,0 +1,20 @@
+.gallary-photos{
+    margin: 80px auto;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.gallary-photo img{
+    width: 270px;
+    height: 270px;
+    border-radius: 10px;
+    display: block;
+    
+
+}
+
+.gallary-photo{
+    flex-basis: 31%;
+}
