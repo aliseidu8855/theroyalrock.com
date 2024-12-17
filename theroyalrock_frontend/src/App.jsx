@@ -1,7 +1,7 @@
 import React from 'react'
 import Navbar from './components/Navbar/Navbar'
 import Hero from './components/Hero/Hero'
-import Gallary from './components/Gallary/Gallary'
+import About from './components/About/About'
 
 const App = () => {
   return (
@@ -9,7 +9,7 @@ const App = () => {
       <Navbar />
       <Hero />
       <div className='container'>
-      <Gallary />
+      <About/>
       </div>
     </div>
   )

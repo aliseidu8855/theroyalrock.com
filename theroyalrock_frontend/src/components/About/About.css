@@ -1,0 +1,70 @@
+.about {
+  width: 100%;
+  margin: 50px auto;
+}
+
+
+
+.about-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.about-content-left {
+  background: url("../../assets/images/royalrock-navbar-bg.jpg") no-repeat
+    center center/cover;
+  width: 3450px;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30px;
+  flex-basis: 40%;
+}
+
+.about-content-left img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+}
+
+.about-content-right {
+  width: 3450px;
+  height: 480px;
+  margin-top: 15px;
+  flex-basis: 58%;
+}
+
+.about-content-right h1 {
+    font-size: 1.1em;
+    text-align: left;
+    margin-bottom: 5px;
+    color: #135ABF;
+    display: flex;
+    align-items: center;
+
+  }
+
+  .about-content-right h1::after{
+    content: "";
+    width: 100px;
+    height: 2px;
+    background-color: #135ABF;
+    display: block;
+    margin-left: 10px;
+  }
+
+  .about-content-right h2{
+    font-size: 3em;
+    font-weight: 700;
+    margin-bottom: 5px;
+  }
+
+    .about-content-right p{
+        font-size: 1.1em;
+        margin-top: 5px;
+        line-height: 1.5;
+    }
+
+
