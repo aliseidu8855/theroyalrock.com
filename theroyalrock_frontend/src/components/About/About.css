@@ -33,18 +33,6 @@
   object-fit: cover;
 }
 
-.about-content-left span{
-  width: 45px;
-  height: 45px;
-  font-size: 45px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: #fff;
-  background-color: #135ABF;
-  border-radius: 50%;
-}
 
 .about-content-right {
   width: 3450px;
@@ -69,9 +57,9 @@
   }
 
     .about-content-right p{
-        font-size: 1.1em;
-        margin-top: 5px;
+        margin-bottom: 15px;
         line-height: 1.5;
+        color: #000f38;
     }
 
 

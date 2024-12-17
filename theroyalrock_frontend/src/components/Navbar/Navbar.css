@@ -1,6 +1,5 @@
-nav{
+nav {
   width: 100%;
-  background-image: url("../../assets/images/royalrock-navbar-bg.jpg");
   color: #fff;
   padding: 15px 0;
   position: fixed;
@@ -12,13 +11,18 @@ nav{
   align-items: center;
 }
 
-nav img{
-  width: 120px;
-  width: 120px;
+nav img {
+  width: 100px;
+  height: 100px;
 }
 nav ul li {
   display: inline-block;
   list-style: none;
   margin: 5px 20px;
   font-size: 16px;
+}
+
+.dark-nav {
+  background-color: #212ea0;
+  transition: 0.5;
 }

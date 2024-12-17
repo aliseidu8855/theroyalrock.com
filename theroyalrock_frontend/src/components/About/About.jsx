@@ -7,9 +7,6 @@ const About = () => {
         <div className='about'>
             <div className='about-content-left'>
                 <img src={logo} alt='The Royal Rock Foundation' />
-                <span class="material-symbols-outlined">
-                    arrow_forward
-                </span>
             </div>
             <div className='about-content-right'>
                 <h3>The Royal Rock Foundation</h3>
