@@ -1,9 +1,14 @@
-.gallery-photos{
+.gallery-container{
     margin: 30px auto;
     width: 100%;
+    text-align: center;
+}
+
+.gallery-photos{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 20px;
 }
 
 .gallery-photo img{
