@@ -11,11 +11,8 @@ import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import PlayCircle from '@mui/icons-material/PlayCircle';
 
 const Gallery = () => {
-
     const slider = useRef();
     let tx = 0;
-
-
 
     const slideForward = () => {
         if (tx > -50) {
@@ -30,49 +27,41 @@ const Gallery = () => {
         slider.current.style.transform = `translateX(${tx}%)`;
     }
 
-
-
-
-
-
-
     return (
         <div className='gallery-container'>
             <ArrowBackIcon style={{ fontSize: 50, color: 'white' }} className='back-btn' onClick={slideBackward} />
             <ArrowForwardIcon style={{ fontSize: 50, color: 'white' }} className='next-btn' onClick={slideForward} />
 
-
             <div className='gallery-photos-slider'>
-
                 <ul ref={slider}>
                     <li>
                         <div className='slide'>
-                            <img src={photo1} alt='photo1' />
+                            <img src={photo1} alt='photo1' loading="lazy" />
                         </div>
                     </li>
                     <li>
                         <div className='slide'>
-                            <img src={photo2} alt='photo1' />
+                            <img src={photo2} alt='photo1' loading="lazy" />
                         </div>
                     </li>
                     <li>
                         <div className='slide'>
-                            <img src={photo3} alt='photo1' />
+                            <img src={photo3} alt='photo1' loading="lazy" />
                         </div>
                     </li>
                     <li>
                         <div className='slide'>
-                            <img src={photo4} alt='photo1' />
+                            <img src={photo4} alt='photo1' loading="lazy" />
                         </div>
                     </li>
                     <li>
                         <div className='slide'>
-                            <img src={photo5} alt='photo1' />
+                            <img src={photo5} alt='photo1' loading="lazy" />
                         </div>
                     </li>
                     <li>
                         <div className='slide'>
-                            <img src={photo6} alt='photo1' />
+                            <img src={photo6} alt='photo1' loading="lazy" />
                         </div>
                     </li>
                 </ul>

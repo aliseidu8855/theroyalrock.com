@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import "./Navbar.css";
 import logo from "../../assets/images/The-Royal-Rock-Logo.png"
 
-
 function Navbar() {
     const [sticky, setSticky] = useState(false);
     useEffect(() => {
@@ -11,10 +10,9 @@ function Navbar() {
         });
     }, [sticky]);
 
-
     return (
         <nav className={`container ${sticky ? 'dark-nav' : ''}`}>
-            <img src={logo} alt="logo" />
+            <img src={logo} alt="logo" loading="lazy" />
             <ul >
                 <li><a href="/">Home</a></li>
                 <li><a href="/about">About</a></li>
@@ -25,7 +23,6 @@ function Navbar() {
                         <a href="/contact">Contact</a>
                     </button>
                 </li>
-
             </ul>
         </nav>
     );
