@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import './Gallery.css'
 import photo1 from "../../assets/images/gallery/photo1.jpg"
 import photo2 from "../../assets/images/gallery/photo2.jpg"
@@ -8,11 +8,27 @@ import photo5 from "../../assets/images/gallery/photo5.jpg"
 import photo6 from "../../assets/images/gallery/photo6.jpg"
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
+import PlayCircle from '@mui/icons-material/PlayCircle';
 
 const Gallery = () => {
 
-    const slideForward = () => {}
-    const slideBackward = () => {}
+    const slider = useRef();
+    let tx = 0;
+
+
+
+    const slideForward = () => {
+        if (tx > -50) {
+            tx -= 25;
+        }
+        slider.current.style.transform = `translateX(${tx}%)`;
+    }
+    const slideBackward = () => {
+        if (tx < 0) {
+            tx += 25;
+        }
+        slider.current.style.transform = `translateX(${tx}%)`;
+    }
 
 
 
@@ -22,13 +38,13 @@ const Gallery = () => {
 
     return (
         <div className='gallery-container'>
-            <ArrowBackIcon style={{ fontSize: 50, color: 'white' }}  className='back-btn' onClick={slideBackward} />
-            <ArrowForwardIcon style={{ fontSize: 50, color: 'white' }}  className='next-btn' onClick={slideForward} />
+            <ArrowBackIcon style={{ fontSize: 50, color: 'white' }} className='back-btn' onClick={slideBackward} />
+            <ArrowForwardIcon style={{ fontSize: 50, color: 'white' }} className='next-btn' onClick={slideForward} />
 
 
             <div className='gallery-photos-slider'>
 
-                <ul>
+                <ul ref={slider}>
                     <li>
                         <div className='slide'>
                             <img src={photo1} alt='photo1' />
@@ -61,6 +77,10 @@ const Gallery = () => {
                     </li>
                 </ul>
             </div>
+
+            <button className='btn dark-btn'>
+                See more here <PlayCircle />
+            </button>
         </div>
     )
 }
