@@ -1,0 +1,100 @@
+.testimonials-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 80px auto;
+}
+
+.left {
+  background: url("../../assets/images/royalrock-navbar-bg.jpg") no-repeat
+    center center/cover;
+  width: 3450px;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30px;
+  flex-basis: 40%;
+  position: relative;
+}
+
+.left img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+}
+
+.right {
+  width: 3450px;
+  height: 480px;
+  margin-top: 15px;
+  flex-basis: 56%;
+}
+
+.right h3 {
+  color: #000f38;
+  font-size: 35px;
+  margin: 10px 0;
+  max-width: 400px;
+}
+
+.testimonials{
+    overflow: hidden;
+}
+
+.testimonials ul {
+  display: flex;
+  width: 200%;
+  overflow-x: hidden;
+  transition: transform 0.5s ease-in-out;
+  list-style: none;
+}
+
+.testimonials ul li {
+  width: 50%;
+  padding: 45px 0 70px 0 ;
+}
+
+.testimonial{
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  background-color: #000f38;
+  padding: 55px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+}
+
+.testimonial p{
+  line-height: 1.7 ;
+  font-weight: 400;
+  color: #fff;
+}
+
+.testimonial h4{
+  color: #fff;
+  font-size: 20px;
+  margin: 10px 0;
+  font-weight: 700;
+}
+
+.test-buttons{
+display: flex;
+align-items: center;
+justify-content: space-between;
+width: 200px;
+margin: 0 auto;
+}
+
+.test-back, .test-next{
+    background: #135ABF;
+    padding: 8px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transform: translateY(-100%);
+}
