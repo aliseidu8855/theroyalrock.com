@@ -7,6 +7,33 @@ import Mail from '@mui/icons-material/Mail';
 import Send from "@mui/icons-material/Send";
 
 const Contact = () => {
+
+    const [result, setResult] = React.useState("");
+
+    const onSubmit = async (event) => {
+        event.preventDefault();
+        setResult("Sending....");
+        const formData = new FormData(event.target);
+
+        formData.append("access_key", "b32cdbf8-d234-4bce-8ad9-c5b9d5716c54");
+
+        const response = await fetch("https://api.web3forms.com/submit", {
+            method: "POST",
+            body: formData
+        });
+
+        const data = await response.json();
+
+        if (data.success) {
+            setResult("Form Submitted Successfully");
+            event.target.reset();
+        } else {
+            console.log("Error", data);
+            setResult(data.message);
+        }
+    };
+
+
     return (
         <div className='contact'>
             <div className='contact-col'>
@@ -20,7 +47,7 @@ const Contact = () => {
                 </ul>
             </div>
             <div className='contact-col'>
-                <form>
+                <form onSubmit={onSubmit}>
                     <label>Your name</label>
                     <input type='text' name='name' placeholder='Enter your name' required />
                     <label>Phone Number</label>
@@ -29,7 +56,7 @@ const Contact = () => {
                     <textarea name='message' rows={6} placeholder='Enter your message here' required></textarea>
                     <button type='submit' className='btn dark-btn'>Send Message <Send /></button>
                 </form>
-                {/* <span>sending</span> */}
+                <span>{result}</span>
             </div>
 
         </div>
