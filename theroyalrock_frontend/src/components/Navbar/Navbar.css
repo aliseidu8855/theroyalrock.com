@@ -23,6 +23,6 @@ nav ul li {
 }
 
 .dark-nav {
-  background-color: #212ea0;
+  background: url("../../assets/images/royalrock-navbar-bg.jpg");
   transition: 0.5;
 }
