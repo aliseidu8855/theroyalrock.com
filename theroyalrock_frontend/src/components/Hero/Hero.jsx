@@ -4,17 +4,20 @@ import hero from '../../assets/images/hero.jpg'
 import SlideshowIcon from '@mui/icons-material/Slideshow';
 
 
-const Hero = () => {
+const Hero = ({ header, subheader, heroBg }) => {
   return (
-    <div className="hero container">
-      <div className='hero-text'>
-        <h1>Empowring Communities Through Innovation and Education</h1>
-        <button className='btn'>Learn More
-          <SlideshowIcon />
-
-        </button>
+    <div
+      className="hero container"
+      style={{
+        background: `linear-gradient(rgba(8,0,58,0.7), rgba(8,0,58,0.7)), url(${heroBg})`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+      }}
+    >
+      <div className="hero-text">
+        <h1>{header}</h1>
+        <p>{subheader}</p>
       </div>
-
     </div>
   )
 }
