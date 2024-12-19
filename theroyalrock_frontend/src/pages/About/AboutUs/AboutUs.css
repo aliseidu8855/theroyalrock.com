@@ -1,0 +1,35 @@
+.aboutUs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.about_logo{
+    background: url("../../../assets/images/royalrock-navbar-bg.jpg") no-repeat center center/cover;
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 12px;
+    margin-top: 12px;
+    border-radius: 10px;
+}
+
+.about_logo img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.about_con{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.about_con p{
+    text-align: left;
+    font-size: 16px;
+    line-height: 1.5;
+}
