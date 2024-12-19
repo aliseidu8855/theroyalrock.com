@@ -1,35 +1,21 @@
-import React from 'react'
-import Navbar from './components/Navbar/Navbar'
-import Hero from './components/Hero/Hero'
-import About from './components/About/About'
-import Title from './components/Title/Title'
-import Gallery from './components/Gallery/Gallery'
-import Programs from './components/Programs/Programs'
-import Testminonials from './components/Testimonials/Testimonials'
-import Contact from './components/Contact/Contact'
-import Footer from './components/Footer/Footer'
-
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Navbar from './components/Navbar/Navbar';
+import Footer from './components/Footer/Footer';
+import Home from './pages/Home/Home';
+import About from './pages/About/About';
 
 const App = () => {
   return (
-    <div>
+    <Router>
       <Navbar />
-      <Hero />
-      <div className='container'>
-        <About />
-        <Title subTitle="Our Gallery" title="Our Work In Pictures" />
-        <Gallery />
-        <Title subTitle="Our Programs" title="What We Do" />
-        <Programs />
-        <Title subTitle="Success Stories" title="Testimonials and Feedback" />
-        <Testminonials />
-        <Title subTitle="Contac Us" title="Get in Touch" />
-        <Contact />
-      </div>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+      </Routes>
       <Footer />
-    </div>
-  )
-}
+    </Router>
+  );
+};
 
-export default App
-
+export default App;

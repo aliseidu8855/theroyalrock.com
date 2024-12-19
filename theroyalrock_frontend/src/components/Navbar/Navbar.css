@@ -1,6 +1,8 @@
+@import "../../assets/CSS/Colors.css";
+
 nav {
   width: 100%;
-  color: #fff;
+  color: var(--primary-text-color);
   padding: 15px 0;
   position: fixed;
   top: 0;
@@ -21,8 +23,11 @@ nav ul li {
   margin: 5px 20px;
   font-size: 16px;
 }
+nav ul li:not(:last-child):hover {
+  border-bottom: 2px solid var(--secondary-color);
+}
 
 .dark-nav {
-  background: url("../../assets/images/royalrock-navbar-bg.jpg");
+  background: var(--primary-color);
   transition: 0.5;
 }
