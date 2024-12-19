@@ -3,6 +3,7 @@ import Title from '../../components/Title/Title';
 import Hero from '../../components/Hero/Hero';
 import AboutUs from "./AboutUs/AboutUs";
 import BoardMembers from "./BoardMembers/BoardMembers";
+import Responsibilities from './Responsibilities/Responsibilities';
 
 
 const AboutPage = () => {
@@ -14,6 +15,9 @@ const AboutPage = () => {
     <AboutUs/>
     <Title subTitle="The Royal Rock Foundation" title="Board Members" />
     <BoardMembers/>
+    <Title subTitle="The Royal Rock Foundation" title="Board Member Responsibilities" />
+    <Responsibilities/>
+
     </div>
     </div>
   );

@@ -30,12 +30,12 @@ const BoardMembers = () => {
   return (
     <div className="boardMembers">
       <ArrowBackIcon
-        style={{ fontSize: 50, color: "black" }}
+        style={{ fontSize: 50, color: "white" }}
         className="m_back-btn"
         onClick={slideBackward}
       />
       <ArrowForwardIcon
-        style={{ fontSize: 50, color: "black" }}
+        style={{ fontSize: 50, color: "white" }}
         className="m_next-btn"
         onClick={slideForward}
       />
