@@ -1,4 +1,6 @@
-.contact{
+@import "../../assets/CSS/Colors.css";
+
+.contact {
     max-width: 90%;
     margin: 80px auto;
     display: flex;
@@ -6,45 +8,45 @@
     justify-content: center;
 }
 
-.contact-col{
+.contact-col {
     flex-basis: 48%;
-    color: #000f38;
+    color: var(--primary-text-color);
 }
-.contact-col h2{
-    color: #000f38;
+
+.contact-col h2 {
+    color: var(--primary-text-color);
     font-weight: 500;
     font-size: 25px;
     margin-bottom: 20px;
     display: flex;
     align-items: center;
-
 }
 
-.contactIcon{
+.contactIcon {
     width: 35px;
     margin-left: 10px;
 }
 
-.contact-col p{
+.contact-col p {
     max-width: 450px;
     list-style: 0.3;
 }
 
-.contact-col ul li{
+.contact-col ul li {
     display: flex;
     align-items: center;
     margin: 20px 0;
 }
 
-.Icons{
+.Icons {
     width: 25px;
     margin-right: 10px;
 }
 
-.contact form input, .contact form textarea{
+.contact form input, .contact form textarea {
     display: block;
     width: 100%;
-    background-color: #ebecfe;
+    background-color: var(--background-color);
     padding: 15px;
     border: 0;
     outline: 0;

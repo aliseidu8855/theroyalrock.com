@@ -2,6 +2,8 @@ import React from "react";
 import Hero from "../../components/Hero/Hero";
 import Title from "../../components/Title/Title";
 import hero3 from "../../assets/images/hero3.jpg";
+import Training from "./Training/Training";
+import HealthOutreachProgram from "./HealthOutreachProgram/HealthOutreachProgram";
 
 const WhatWeDo = () => {
   return (
@@ -10,8 +12,10 @@ const WhatWeDo = () => {
       <div className="container">
         <Title
           subTitle="What We Do"
-          title="Training for a Sustainable Future"
         />
+        <Training />
+        <Title title="Health Outreach Program" subTitle = "Improving Access to Healthcare" />
+        <HealthOutreachProgram />
       </div>
     </div>
   );

@@ -1,6 +1,13 @@
-:root{
-
-    --primary-color: #574a24;
-    --secondary-color: #cc8033;
-    --primary-text-color: #fff;
+:root {
+    --primary-color: #d4af37; /* Gold */
+    --secondary-color: #2c3e50; /* Dark Blue */
+    --accent-color: #e74c3c; /* Red */
+    --background-color: #f5f5f5; /* Light Gray */
+    --header-background-color: #2c3e50; /* Dark Blue */
+    --primary-text-color: #2c3e50; /* Dark Blue */
+    --secondary-text-color: #ffffff; /* White */
+    --link-color: #d4af37; /* Gold */
+    --link-hover-color: #e74c3c; /* Red */
+    --purple-color: #6a0dad; /* Purple */
+    --purple-hover-color: #8a2be2; /* Blue Violet */
 }

@@ -1,15 +1,17 @@
-.title{
+@import "../../assets/CSS/Colors.css";
+
+.title {
     text-align: center;
-    color: #135ABF;
+    color: var(--secondary-color);
     font-size: 15px;
     font-weight: 600;
     text-transform: uppercase;
     margin: 50px 0 10px;
 }
 
-.title h2{
+.title h2 {
     font-size: 32px;
-    color: #000f38;
+    color: var(--primary-text-color);
     margin-top: 5px;
     text-transform: none;
 }

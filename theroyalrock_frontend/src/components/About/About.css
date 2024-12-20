@@ -1,3 +1,5 @@
+@import "../../assets/CSS/Colors.css";
+
 .about {
   margin: 50px auto;
   display: flex;
@@ -6,8 +8,6 @@
   width: 100%;
 }
 
-
-
 .about-content {
   display: flex;
   align-items: center;
@@ -15,8 +15,7 @@
 }
 
 .about-content-left {
-  background: url("../../assets/images/royalrock-navbar-bg.jpg") no-repeat
-    center center/cover;
+  background: var(--header-background-color) no-repeat center center/cover;
   width: 3450px;
   height: 500px;
   display: flex;
@@ -33,7 +32,6 @@
   object-fit: cover;
 }
 
-
 .about-content-right {
   width: 3450px;
   height: 480px;
@@ -44,22 +42,18 @@
 .about-content-right h3 {
     font-weight: 600;
     font-weight: 16px;
-    color: #135ABF;
+    color: var(--secondary-color);
+}
 
-
-  }
-
-  .about-content-right h2{
+.about-content-right h2 {
     font-size: 35px;
-    color: #000f38;
+    color: var(--primary-text-color);
     margin: 10px 0;
     max-width: 400px;
-  }
+}
 
-    .about-content-right p{
-        margin-bottom: 15px;
-        line-height: 1.5;
-        color: #000f38;
-    }
-
-
+.about-content-right p {
+    margin-bottom: 15px;
+    line-height: 1.5;
+    color: var(--primary-text-color);
+}

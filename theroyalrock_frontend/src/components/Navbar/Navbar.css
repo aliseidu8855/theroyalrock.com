@@ -17,17 +17,19 @@ nav img {
   width: 100px;
   height: 100px;
 }
+
 nav ul li {
   display: inline-block;
   list-style: none;
   margin: 5px 20px;
   font-size: 16px;
 }
+
 nav ul li:not(:last-child):hover {
-  border-bottom: 2px solid var(--secondary-color);
+  border-bottom: 2px solid var(--primary-color);
 }
 
 .dark-nav {
-  background: var(--primary-color);
-  transition: 0.5;
+  background: var(--secondary-color);
+  transition: 0.5s;
 }

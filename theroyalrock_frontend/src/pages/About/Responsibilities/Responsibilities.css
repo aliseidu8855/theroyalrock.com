@@ -1,15 +1,17 @@
-.responsibilities{
+@import "../../../assets/CSS/Colors.css";
+
+.responsibilities {
     margin: 80px 0;
 }
 
-.responsibilities h3{
+.responsibilities h3 {
     font-size: 1.5rem;
     font-weight: 700;
     margin-bottom: 20px;    
     text-align: center;
 }
 
-.responsibilities_list ul{
+.responsibilities_list ul {
     list-style: none;
     padding: 0;
     display: flex;
@@ -17,7 +19,7 @@
     justify-content: center;
 }
 
-.responsibilities_list ul li{
+.responsibilities_list ul li {
     width: 45%;
     margin: 10px;
     padding: 20px;
@@ -27,19 +29,19 @@
     transition: all 0.3s;
 }
 
-.responsibilities_list ul li:hover{
+.responsibilities_list ul li:hover {
     box-shadow: 0 0 10px rgba(0,0,0,0.2);
 }
 
-.responsibilities_list ul li h4{
+.responsibilities_list ul li h4 {
     font-size: 1.2rem;
     font-weight: 700;
     margin-bottom: 10px;
-    color: darkslateblue;
+    color: var(--purple-color);
 }
 
-.responsibilities_list ul li p{
+.responsibilities_list ul li p {
     font-size: 1rem;
     font-weight: 400;
-    color: #333;
+    color: var(--primary-text-color);
 }
